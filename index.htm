@@ -1,12 +1,9 @@
 <meta charset='utf-8'>
 
 <script>
-function c(s) {
-  return s.split(/-/).reduce(function(a, b) {
-    return /^\w+$/.test(b) ? a + (a ? b[0].toUpperCase() : b[0]) + b.slice(1) : a;
-  });
-}
 
-alert(c(prompt()));
+alert(prompt().split(/-/).reduce(function(a, b) {
+  return /^\w+$/.test(b) ? a + (a ? b[0].toUpperCase() : b[0]) + b.slice(1) : a;
+}))
 
 </script>
