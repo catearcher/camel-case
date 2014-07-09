@@ -3,7 +3,7 @@
 <script>
 
 alert(prompt().split(/-/).reduce(function(a, b) {
-  return /^\w+$/.test(b) ? a + (a ? b[0].toUpperCase() : b[0]) + b.slice(1) : a;
+  return /^\w+$/.test(b) ? a + (a ? b[0].toUpperCase() : b[0]) + b.slice(1) : a
 }))
 
 </script>
